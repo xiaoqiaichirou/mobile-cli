@@ -1,0 +1,160 @@
+@charset "UTF-8";
+/*
+html5doctor.com Reset Stylesheet
+v1.0.0
+2020.03.19
+Author: James - https://github.com/xiaoqiaichirou/mypage
+*/
+html {
+    color: #333;
+    /*规定主色调,依据业务场景(非必须)*/
+    /* background: #F6F6F6; */
+    /*规定主背景,依据业务场景(非必须)*/
+    -webkit-text-size-adjust: 100%;
+    /*不想让iPhone横坚屏切换的时候调节文字*/
+    -ms-text-size-adjust: 100%;
+}
+html * {
+    /*所有元素*/
+    outline: none;
+    /*去除移动端开发点击事件灰色背景如a标签*/
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body,html{
+    /* 默认高度100% */
+    height: 100%;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    /*输入框提示语的字体样式*/
+    color: #999;
+}
+li {
+    list-style: none;
+}
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    vertical-align:baseline;
+    background:transparent;
+    box-sizing:border-box;
+}
+input,
+select,
+textarea {
+    font-size: 100%;
+    background-color: transparent;
+    border: 0;
+}
+button,
+html input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+    -webkit-appearance: button;  /*渲染成button的风格*/
+    text-transform: none;
+    outline: none;
+}
+input::-webkit-inner-spin-button {
+    /*解决input的type="number"在部分手机端会出现一个小按钮*/
+    -webkit-appearance: none;/*去除系统默认appearance的样式,常用于IOS下移除原生样式*/
+}
+
+input::-webkit-outer-spin-button {
+    /*解决input的type="number"在部分手机端会出现一个小按钮*/
+    -webkit-appearance: none;
+}
+textarea {
+    vertical-align: top;
+}
+button,
+input {
+    /* 默认行高 */
+    line-height: normal;
+}
+select {
+    margin: 0;
+    /* 默认4个边框为0 */
+    outline: 0;
+}
+
+input.fixAKeyboard:focus,
+textarea.fixAndroidKeyboard:focus {
+    /* ios端可点击元素点击时会有高亮显示，造成屏幕闪动 */
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    /* inoput、textarea只能输入文本 */
+    /* -webkit-User-modify: read-write-plaintext-only; */
+}
+input:-webkit-autofill {
+    /* 解决获取焦点时之前填写过的文本会有黄色背景 */
+    /* input设置内置阴影 */
+    -webkit-box-shadow: 0 0 0 1000px white inset !important;
+}
+button,
+input[type=button],
+input[type=checkbox],
+input[type=reset],
+input[type=submit],
+label {
+    /* 手指 */
+    cursor: pointer;
+    /* 文本不能被选择 */
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+input[type=submit] {
+    /* 标签变成可编辑 */
+    -webkit-user-modify: read-plaintext-only;
+    -moz-user-modify: read-plaintext-only;
+    -ms-user-modify: read-plaintext-only;
+    -o-user-modify: read-plaintext-only;
+    user-modify: read-plaintext-only;
+}
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+input[type='search'] {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-appearance: textfield;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box; /*所有元素以border开始计算盒子大小*/
+}
+a {
+    text-decoration: none;
+}
+/*正常的未被访问过的链接*/
+a:link {
+    text-decoration: none;
+}
+/*已经访问过的链接*/
+a:visited {
+    text-decoration: none;
+}
+/*鼠标划过(停留)的链接*/
+a:hover {
+    text-decoration: none;
+}
+/* 正在点击的链接*/
+a:active {
+    text-decoration: none;
+}

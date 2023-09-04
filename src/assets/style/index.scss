@@ -1,0 +1,15 @@
+// 重置样式
+@import "reset.scss";
+// tailwindcss
+@import "input.scss";
+
+
+// 布局
+body {
+    display: flex;
+    flex-direction: column;
+}
+#app {
+    display: flex;
+    flex: 1;
+}

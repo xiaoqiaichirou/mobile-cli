@@ -1,0 +1,29 @@
+$namespace: 'js' !default;
+$block-sel: '-' !default;
+$elem-sel: '__' !default;
+$mod-sel: '--' !default;
+
+
+@mixin b($block) {
+    $B:#{$namespace + $block-sel + $block};
+    .#{$B} {
+        @content;
+    }
+}
+
+@mixin e($el) {
+    @at-root {
+        #{& + $elem-sel + $el} {
+            @content;
+        }
+    }
+}
+
+@mixin m($m) {
+    $selector: &;
+    @at-root {
+        #{$namespace + $mod-sel + $m} {
+            @content;
+        }
+    }
+}
