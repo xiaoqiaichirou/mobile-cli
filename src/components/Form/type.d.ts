@@ -7,7 +7,8 @@ import type {
     AreaProps,
     SliderProps,
     StepperProps,
-    RateProps
+    RateProps,
+    SwitchProps
 } from 'vant'
 
 interface FieldAttrs extends FieldProps {
@@ -21,7 +22,7 @@ interface Option {
 export interface Rule {
     type: string,
     fieldProps: FieldAttrs,
-    moduleProps?: PickerProps | DatePickerProps | TimePickerProps | CalendarProps | AreaProps | SliderProps | StepperProps | RateProps,
+    moduleProps?: PickerProps | DatePickerProps | TimePickerProps | CalendarProps | AreaProps | SliderProps | StepperProps | RateProps | SwitchProps,
     format?: string,
     hidden?: boolean,
     options?: Array<Option>

@@ -14,7 +14,7 @@ export default defineComponent({
             default: () => {}
         },
         Rules: {
-            type: Object as PropType<Rule[]>,
+            type: Object as PropType<Array<Rule>>,
             required: true
         },
         FormParams: {

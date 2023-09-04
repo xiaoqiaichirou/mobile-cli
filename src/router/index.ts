@@ -22,7 +22,7 @@ const rootRoutes = Object.keys(mainRouterModules).map((path) => {
         return {
             path: '/',
             name,
-            redirect: '/questionBank',
+            redirect: '/home',
             component: mainRouterModules[path],
             children: childRoutes
         };

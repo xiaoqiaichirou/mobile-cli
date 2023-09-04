@@ -10,19 +10,9 @@ export default defineComponent({
 
         const tabBarConfig:Array<TabBar> = [
             {
-                label: '题库',
-                name: 'questionBank',
-                icon: 'font-o'
-            },
-            {
-                label: '视频教学',
-                name: 'videoTeaching',
-                icon: 'play-circle-o'
-            },
-            {
-                label: '在线考试',
-                name: 'examination',
-                icon: 'newspaper-o'
+                label: '首页',
+                name: 'home',
+                icon: 'home-o'
             },
             {
                 label: '个人中心',
@@ -31,7 +21,7 @@ export default defineComponent({
             }
         ]
 
-        const handleChange = (tabName) => {
+        const handleChange = (tabName: string) => {
             active.value = tabName
         }
         return () => (
